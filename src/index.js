@@ -1,1 +1,2 @@
-console.log("yoo")
+import initializeWebsite from "./modules/website";
+initializeWebsite();
