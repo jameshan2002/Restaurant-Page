@@ -15,7 +15,31 @@ function createHeader() {
 }
 
 function createNav() {
-    
+    const menus = document.createElement("nav");
+
+    const homeButton = document.createElement("button");
+    const menuButton = document.createElement("button");
+    const contactButton = document.createElement("button");
+
+    homeButton.textContent = "home";
+    menuButton.textContent = "menu";
+    contactButton.textContent = "contact";
+
+    homeButton.classList.add("button-nav");
+    menuButton.classList.add("button-nav");
+    contactButton.classList.add("button-nav");
+
+    homeButton.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(homeButton);
+        loadHome();
+      });
+
+    menus.appendChild(homeButton);
+    menus.appendChild(menuButton);
+    menus.appendChild(contactButton);
+
+    return menus;
 }
 
 function createMain() {

@@ -1,3 +1,70 @@
+body {
+    color: white;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADERS*/
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.8em;
+}
+
+.name {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 2.6em;
+    line-height: 0.3em;
+    padding-left: 0.3em;
+    margin-right: 0.7em;
+}
+
+header button {
+    position: relative;
+    top: 6px;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    background: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+header button:hover {
+    transform: translateY(-7%);
+}
+
+/*END OF HEADERS*/
+/*MAIN*/
 main {
+    padding: 1em;
+    background-image: url("image/background.jpg");
+    background-repeat: no-repeat, repeat;
     text-align: center;
 }
+
+.about {
+    margin: 14em auto 14em auto;
+}
+
+.subTitle {
+    margin: auto;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 1em;
+}
+
+/*END OF MAIN*/
+/*FOOTER*/
+/*END OF FOOTER*/
