@@ -28,7 +28,7 @@ header {
 
 header button {
     position: relative;
-    top: 6px;
+    top:4px;
     text-transform: uppercase;
     font-size: 1em;
     padding: 0.5em;
@@ -52,7 +52,7 @@ main {
 }
 
 .about {
-    margin: 14em auto 14em auto;
+    margin: 16em auto 16em auto;
 }
 
 .subTitle {
@@ -66,5 +66,37 @@ main {
 }
 
 /*END OF MAIN*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    height: 400px;
+    width: 250px;
+    background: rgba(0,0,0,0.8);
+}
+
+.menuItem img {
+    width: 150px;
+}
 /*FOOTER*/
+footer {
+    display: block;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+.fab {
+    color: white;
+    font-size: 1.2em;
+}
 /*END OF FOOTER*/

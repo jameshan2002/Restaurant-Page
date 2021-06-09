@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 function createHeader() {
     const header = document.createElement("header");
@@ -31,9 +32,12 @@ function createNav() {
 
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
-        setActiveButton(homeButton);
         loadHome();
-      });
+    });
+    menuButton.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        loadMenu();
+    });
 
     menus.appendChild(homeButton);
     menus.appendChild(menuButton);
@@ -49,14 +53,36 @@ function createMain() {
     return main;
 }
 
+function createFooter() {
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+
+    const created = document.createElement("p");
+    created.textContent = "Created by James Han";
+    created.classList.add("created");
+
+    const githubLink = document.createElement("a");
+    githubLink.href = "https://github.com/jameshan2002";
+    githubLink.target = "_blank";
+
+    const githubIcon = document.createElement("i");
+    githubIcon.classList.add("fab");
+    githubIcon.classList.add("fa-github");
+
+    footer.appendChild(created);
+    githubLink.appendChild(githubIcon);
+    footer.appendChild(githubLink);
+
+    return footer;
+}
+
 function initializeWebsite() {
     const content = document.getElementById("content");
 
     content.appendChild(createHeader());
     content.appendChild(createMain());
-    // content.appendChild(createFooter());
+    content.appendChild(createFooter());
 
-    //setActiveButton(document.querySelector(".button-nav"));
     loadHome();
 }
 
