@@ -66,24 +66,60 @@ main {
 }
 
 /*END OF MAIN*/
-
+/*MENU*/
 .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: auto 500px auto 500px;
 }
 
 .menuItem {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 230px;
     background: rgba(0,0,0,0.8);
+    transition: transform .2s;
+    margin: 10px;
+}
+
+.menuItem:hover
+{
+    transform: scale(1.03);
+}
+
+.menuItem h3 {
+    line-height: 0.5em;
+}
+
+.price {
+    line-height: 0.8em;
 }
 
 .menuItem img {
-    width: 150px;
+    width: 140px;
+    height: 140px;
 }
+
+.desc {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/*END OF MENU*/
+
+/*CONTACT*/
+.contacts {
+    margin: 14em auto 14em auto;
+    padding: 0.5em;
+}
+
+.contacts h2 {
+    font-size: 2.5em;
+}
+/*END OF CONTACT*/
+
 /*FOOTER*/
 footer {
     display: block;

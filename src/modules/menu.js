@@ -3,7 +3,10 @@ function createMenu()
     const menu = document.createElement("div");
     menu.classList.add("menu");
 
-    menu.appendChild(createMenuItems("Pizza", 5.99, "Peperoni Pizza that you cannot have in other places!"));
+    menu.appendChild(createMenuItems("Pizza", 5.99, "A Peperoni Pizza that you cannot have in other places!"));
+    menu.appendChild(createMenuItems("Pasta", 7.99, "A Tomato Pasta that you cannot have in other places!"));
+    menu.appendChild(createMenuItems("Soup", 3.99, "A Sausage Soup that you cannot have in other places!"));
+    menu.appendChild(createMenuItems("Lasagna", 5.99, "A Classic Lasagna that you cannot have in other places!"));
 
     return menu;
 }
@@ -17,9 +20,11 @@ function createMenuItems(name, price, description)
     menuName.textContent = name;
 
     const menuPrice = document.createElement("p");
-    menuPrice.textContent = `$ ${price}`;
+    menuPrice.classList.add("price");
+    menuPrice.textContent = `$${price}`;
 
     const menuDesc = document.createElement("p");
+    menuDesc.classList.add("desc");
     menuDesc.textContent = description;
 
     const menuPicture = document.createElement("img");
