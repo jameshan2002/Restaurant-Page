@@ -7,16 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jameshan2002/Restaurant-Page.git"
-  },
   "author": "James",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jameshan2002/Restaurant-Page/issues"
-  },
-  "homepage": "https://github.com/jameshan2002/Restaurant-Page#readme",
   "devDependencies": {
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
