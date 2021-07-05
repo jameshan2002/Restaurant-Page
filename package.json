@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/jameshan2002/Restaurant-Page/issues"
   },
-  "homepage": "https://github.com/jameshan2002/Restaurant-Page#readme",
+  "homepage": "https://github.com/jameshan2002/Restaurant-Page",
   "devDependencies": {
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
